@@ -1,5 +1,5 @@
 (fp_lib_table
-  (lib (name "AudioJacks")(type "KiCad")(uri "/home/strav/devel/diy-synth/mixer/libraries/AudioJacks/AudioJacks.pretty")(options "")(descr ""))
-  (lib (name "SamacSys_Parts")(type "KiCad")(uri "/home/strav/devel/diy-synth/mixer/libraries/Samacys-Parts/SamacSys_Parts.pretty")(options "")(descr ""))
-  (lib (name "Panelization")(type "KiCad")(uri "/home/strav/devel/diy-synth/mixer/libraries/Panelization.pretty")(options "")(descr ""))
+  (lib (name "AudioJacks")(type "KiCad")(uri "/home/strav/devel/diy-synth/eurorack-libs/AudioJacks/AudioJacks.pretty")(options "")(descr ""))
+  (lib (name "Alpha_Pots")(type "KiCad")(uri "/home/strav/devel/diy-synth/eurorack-libs/Alpha_Pots.pretty")(options "")(descr ""))
+  (lib (name "Panelization")(type "KiCad")(uri "/home/strav/devel/diy-synth/eurorack-libs/Panelization.pretty")(options "")(descr ""))
 )

@@ -2,7 +2,7 @@ build
 *.swp
 tags
 cscope.*
-keyboard-controller-backups
+*-backups/
 
 # Ignore list for KiCAD Projects# Temporary files
 *.000
@@ -21,6 +21,3 @@ fp-info-cache
 # Autorouter files (exported from Pcbnew)
 *.dsn
 *.ses
-
-mixer-backups
-mixer-panel-backups
