@@ -1,0 +1,17 @@
+(footprint "3.5MM_Jack_Panel_Input_Plated" (version 20211014) (generator pcbnew)
+  (layer "F.Cu")
+  (tedit 0)
+  (fp_text reference "REF**" (at 0 -5.6896 unlocked) (layer "F.SilkS")
+    (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp aee4c8c8-2dfa-4c9c-8c19-3374b99eb409)
+  )
+  (fp_text value "3.5MM_Jack_Panel_Input_Plated" (at 0 -4.1896 unlocked) (layer "F.Fab") hide
+    (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp 4f9de4b1-21fd-4d98-9687-bfaabcf12bce)
+  )
+  (fp_text user "${REFERENCE}" (at 0.0508 -7.2136 unlocked) (layer "F.Fab") hide
+    (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp 3392933c-3cec-4914-9262-eb7696e40284)
+  )
+  (pad "" thru_hole circle (at 0 0) (size 7 7) (drill 6) (layers *.Cu *.Mask) (tstamp 33fff90f-7148-4914-a090-6fd1a2192bd8))
+)

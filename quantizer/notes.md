@@ -1,0 +1,25 @@
+# Quantizer
+
+- Somewhat simple quantizer with the following features:
+    - 2 inputs
+    - 2 outputs (same scale/key)
+    - 4 char display
+    - 1 rotary encorder w/ switch for selection: https://www.taydaelectronics.com/rotary-encoder-11mm-20-detents-d-shaft-with-switch-vertical.html
+    - If the uC has another ADC, maybe some kind of transpose or mod input
+- Hardware:
+    - 4 Jacks
+    - Opamps for buffering/scaling
+    - DAC: MCP4922
+    - ADC: MCP3202
+    - Rotary encoder w/ button
+    - 4 char display - This is the one I have: http://www.knap.at/datenblaetter/led/led_for_fyq-5643abx.pdf
+    - 4 2n3094 (or similar) for sinking display current
+    - 1 Shift reg for display control
+    - MCU: Maybe this: https://www.mouser.com/ProductDetail/Microchip-Technology-Atmel/PIC18F46Q84-E-P?qs=vmHwEFxEFR%2FEKymxkMIvFw%3D%3D
+- IO pins required:
+    - Encoder: 3 (DT, CLK, BUTTON)
+    - SPI: CLK, IN, OUT: 3
+    - DAC: CS, LDAC: 2
+    - ADC: CS, LDAC: 2
+    - Shift regs: DATA, CLK: 2
+    - Display: 4 digit inputs

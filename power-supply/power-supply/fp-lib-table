@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "WEALTH_METAL_Barrel_Jacks")(type "KiCad")(uri "${KIPRJMOD}/../libraries/WEALTH_METAL_Barrel_Jacks.pretty")(options "")(descr ""))
+)

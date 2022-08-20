@@ -1,0 +1,9 @@
+[submodule "hardware/libraries/KiCad-RP-Pico"]
+	path = hardware/libraries/KiCad-RP-Pico
+	url = git@github.com:ncarandini/KiCad-RP-Pico.git
+[submodule "firmware/pico-sdk"]
+	path = firmware/pico-sdk
+	url = https://github.com/raspberrypi/pico-sdk.git
+[submodule "hardware/libraries/AudioJacks"]
+	path = hardware/libraries/AudioJacks
+	url = git@github.com:clacktronics/AudioJacks.git

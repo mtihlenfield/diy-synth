@@ -1,0 +1,21 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP NE555DR
+D Single Precision Timer
+K
+F http://www.ti.com/lit/ds/symlink/ne555.pdf
+$ENDCMP
+#
+$CMP SR2612F-0107-18F5B-D8-S
+D Rotary Switches 1 POLE 7 POS D SHAFT
+K
+F https://www.mouser.co.uk/datasheet/2/13/taiwanalpha_12112018_SR2612F-1509903.pdf
+$ENDCMP
+#
+$CMP SR2612F-0112-38F5B-D8-S
+D Rotary Switches 1 POL 12 POS D SHAFT
+K
+F https://componentsearchengine.com/Datasheets/1/SR2612F-0112-38F5B-D8-S.pdf
+$ENDCMP
+#
+#End Doc Library

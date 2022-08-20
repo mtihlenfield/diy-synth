@@ -1,0 +1,9 @@
+[submodule "eurorack-libs/Panelization.pretty"]
+	path = eurorack-libs/Panelization.pretty
+	url = https://github.com/madworm/Panelization.pretty.git
+[submodule "eurorack-libs/AudioJacks"]
+	path = eurorack-libs/AudioJacks
+	url = git@github.com:clacktronics/AudioJacks.git
+[submodule "eurorack-libs/KiCad-RP-Pico"]
+	path = eurorack-libs/KiCad-RP-Pico
+	url = git@github.com:ncarandini/KiCad-RP-Pico.git
