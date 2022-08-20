@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name "WEALTH_METAL_Barrel_Jacks")(type "KiCad")(uri "/home/strav/devel/diy-synth/eurorack-libs/WEALTH_METAL_Barrel_Jacks.pretty")(options "")(descr ""))
+  (lib (name "DEGSON_Screw_Terminals")(type "KiCad")(uri "/home/strav/devel/diy-synth/eurorack-libs/DEGSON_Screw_Terminals.pretty")(options "")(descr ""))
+)
