@@ -3221,13 +3221,13 @@
       (reference "R44") (unit 1) (value "2.2K") (footprint "Royal_Ohm_Resistors:R_Axial_DIN0207_L6.8mm_D2.5mm_P10.16mm_Horizontal")
     )
     (path "/25f9996e-fca5-4a93-99a2-b5b3536e9922/c6a15aa8-0e4f-4716-b03d-90aa3cb4a4e3"
-      (reference "RV1") (unit 1) (value "CLK_SPEED") (footprint "Alpha_Potentiometers:Potentiometer_Alpha_RV09AF-40-20K-B1K_Single_Vertical")
+      (reference "RV1") (unit 1) (value "CLK_SPEED") (footprint "Alpha_Pots:Potentiometer_Alpha_RV09AF-40-20K_Single_Vertical")
     )
     (path "/25f9996e-fca5-4a93-99a2-b5b3536e9922/c3601b84-79aa-4728-ab91-5e7198ad8a4d"
-      (reference "RV2") (unit 1) (value "PORTAMENTO") (footprint "Alpha_Potentiometers:Potentiometer_Alpha_RV09AF-40-20K-B1K_Single_Vertical")
+      (reference "RV2") (unit 1) (value "PORTAMENTO") (footprint "Alpha_Pots:Potentiometer_Alpha_RV09AF-40-20K_Single_Vertical")
     )
     (path "/25f9996e-fca5-4a93-99a2-b5b3536e9922/dc40ad17-30be-41b1-a8f7-82363ffcc272"
-      (reference "RV3") (unit 1) (value "GATE_TIME") (footprint "Alpha_Potentiometers:Potentiometer_Alpha_RV09AF-40-20K-B1K_Single_Vertical")
+      (reference "RV3") (unit 1) (value "GATE_TIME") (footprint "Alpha_Pots:Potentiometer_Alpha_RV09AF-40-20K_Single_Vertical")
     )
     (path "/089082ec-1626-4468-acb7-d90ac825f807"
       (reference "SW1") (unit 1) (value "RESET") (footprint "Button_Switch_THT:SW_PUSH_6mm")
