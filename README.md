@@ -10,5 +10,6 @@ TODO: Update keyboard to use common libraries
 
 ## In progress
 
+- noise - Noise generater module
 - keyboard - Volt per octave keyboard and sequencer
 - quantizer - Digital quantizer

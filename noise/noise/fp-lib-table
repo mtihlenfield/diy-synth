@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "Tayda_Jacks")(type "KiCad")(uri "/home/strav/devel/diy-synth/eurorack-libs/Tayda_Jacks.pretty")(options "")(descr ""))
+)
