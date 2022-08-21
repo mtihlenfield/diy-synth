@@ -2316,6 +2316,12 @@
   )
 
   (gr_rect locked (start 130 45) (end 173 143) (layer "Edge.Cuts") (width 0.2) (fill none) (tstamp 03d1c9a2-35e9-4b73-b826-37544c3a8631))
+  (gr_text "Northridge Devices  - August 2022" (at 170.5 59.75 90) (layer "B.SilkS") (tstamp 9e2ad488-93fb-440a-9fa1-1767a722feee)
+    (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+  )
+  (gr_text "Noise - REV1" (at 136.5 141.25) (layer "F.SilkS") (tstamp db5484fc-34b4-4f1f-b74e-ac684e6b1b10)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
   (dimension (type aligned) (layer "Cmts.User") (tstamp 17c96a49-5960-4feb-9770-8354846da170)
     (pts (xy 130 45) (xy 173 45))
     (height -5.25)
