@@ -1,0 +1,1114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/home/strav/devel/diy-synth/noise/noise/noise.kicad_sch</source>
+    <date>Sun 21 Aug 2022 01:23:40 PM EDT</date>
+    <tool>Eeschema 6.0.7-f9a2dced07~116~ubuntu20.04.1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Noise Module</title>
+        <company>Northridge Devices</company>
+        <rev>REV1</rev>
+        <date/>
+        <source>noise.kicad_sch</source>
+        <comment number="1" value="Schematic by Moritz Klien"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>10uF</value>
+      <footprint>Capacitor_THT:CP_Radial_D5.0mm_P2.00mm</footprint>
+      <fields>
+        <field name="Comment">Electrolytic</field>
+        <field name="Manufacturer">AISHI</field>
+        <field name="Manufacturer Part No.">WK1CM100D11OT</field>
+        <field name="Supplier">Tayda</field>
+        <field name="Supplier Part No.">A-3931</field>
+      </fields>
+      <libsource lib="Device" part="C_Polarized" description="Polarized capacitor"/>
+      <property name="Supplier" value="Tayda"/>
+      <property name="Manufacturer" value="AISHI"/>
+      <property name="Manufacturer Part No." value="WK1CM100D11OT"/>
+      <property name="Supplier Part No." value="A-3931"/>
+      <property name="Comment" value="Electrolytic"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="noise.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>40c4470f-1a1b-442b-b8ca-0d8828b4b262</tstamps>
+    </comp>
+    <comp ref="C2">
+      <value>10uF</value>
+      <footprint>Capacitor_THT:CP_Radial_D5.0mm_P2.00mm</footprint>
+      <fields>
+        <field name="Comment">Electrolytic</field>
+        <field name="Manufacturer">AISHI</field>
+        <field name="Manufacturer Part No.">WK1CM100D11OT</field>
+        <field name="Supplier">Tayda</field>
+        <field name="Supplier Part No.">A-3931</field>
+      </fields>
+      <libsource lib="Device" part="C_Polarized" description="Polarized capacitor"/>
+      <property name="Supplier" value="Tayda"/>
+      <property name="Manufacturer" value="AISHI"/>
+      <property name="Manufacturer Part No." value="WK1CM100D11OT"/>
+      <property name="Supplier Part No." value="A-3931"/>
+      <property name="Comment" value="Electrolytic"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="noise.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5cbe1bf8-34e1-4cf1-90d2-6e87dd88080c</tstamps>
+    </comp>
+    <comp ref="C3">
+      <value>1uF</value>
+      <footprint>Capacitor_THT:C_Rect_L7.2mm_W3.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2</footprint>
+      <fields>
+        <field name="Comment">Film</field>
+        <field name="Manufacturer">WIMA</field>
+        <field name="Manufacturer Part No.">MKS2B041001C00KSSD</field>
+        <field name="Supplier">Tayda</field>
+        <field name="Supplier Part No.">A-3290</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Comment" value="Film"/>
+      <property name="Manufacturer" value="WIMA"/>
+      <property name="Manufacturer Part No." value="MKS2B041001C00KSSD"/>
+      <property name="Supplier" value="Tayda"/>
+      <property name="Supplier Part No." value="A-3290"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="noise.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7ba5dc36-6c50-47a6-b441-5dddf850725d</tstamps>
+    </comp>
+    <comp ref="C4">
+      <value>5n6</value>
+      <footprint>Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2</footprint>
+      <fields>
+        <field name="Comment">Film</field>
+        <field name="Manufacturer">ARCOTRONICS</field>
+        <field name="Manufacturer Part No.">5.6nF/100V</field>
+        <field name="Supplier">Tayda</field>
+        <field name="Supplier Part No.">A-423</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Comment" value="Film"/>
+      <property name="Supplier" value="Tayda"/>
+      <property name="Manufacturer" value="ARCOTRONICS"/>
+      <property name="Manufacturer Part No." value="5.6nF/100V"/>
+      <property name="Supplier Part No." value="A-423"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="noise.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2699e0e0-da3e-4405-b53d-6667e01615e0</tstamps>
+    </comp>
+    <comp ref="C5">
+      <value>2n2</value>
+      <footprint>Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2</footprint>
+      <fields>
+        <field name="Comment">Film</field>
+        <field name="Manufacturer">WIMA</field>
+        <field name="Manufacturer Part No.">FKS2D012201A00JSSD</field>
+        <field name="Supplier">Tayda</field>
+        <field name="Supplier Part No.">A-935</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Comment" value="Film"/>
+      <property name="Supplier" value="Tayda"/>
+      <property name="Supplier Part No." value="A-935"/>
+      <property name="Manufacturer" value="WIMA"/>
+      <property name="Manufacturer Part No." value="FKS2D012201A00JSSD"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="noise.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6bc72596-32b9-4d89-9cc1-17cdaef0fcf5</tstamps>
+    </comp>
+    <comp ref="C6">
+      <value>680p</value>
+      <footprint>Capacitor_THT:C_Rect_L7.2mm_W5.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2</footprint>
+      <fields>
+        <field name="Comment">Film</field>
+        <field name="Manufacturer">WIMA</field>
+        <field name="Manufacturer Part No.">FKP2O106801G00JSSD </field>
+        <field name="Supplier">Mouser</field>
+        <field name="Supplier Part No."> 505-FKP2680/1000/5 </field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Comment" value="Film"/>
+      <property name="Supplier" value="Mouser"/>
+      <property name="Manufacturer" value="WIMA"/>
+      <property name="Manufacturer Part No." value="FKP2O106801G00JSSD "/>
+      <property name="Supplier Part No." value=" 505-FKP2680/1000/5 "/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="noise.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1e1ebc03-f35a-48b2-a8da-a17784de15a2</tstamps>
+    </comp>
+    <comp ref="C7">
+      <value>680p</value>
+      <footprint>Capacitor_THT:C_Rect_L7.2mm_W5.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2</footprint>
+      <fields>
+        <field name="Comment">Film</field>
+        <field name="Manufacturer">WIMA</field>
+        <field name="Manufacturer Part No.">FKP2O106801G00JSSD </field>
+        <field name="Supplier">Mouser</field>
+        <field name="Supplier Part No."> 505-FKP2680/1000/5 </field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Comment" value="Film"/>
+      <property name="Supplier" value="Mouser"/>
+      <property name="Manufacturer" value="WIMA"/>
+      <property name="Manufacturer Part No." value="FKP2O106801G00JSSD "/>
+      <property name="Supplier Part No." value=" 505-FKP2680/1000/5 "/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="noise.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>22b30500-36e1-4574-8dfe-adbd31f8a22e</tstamps>
+    </comp>
+    <comp ref="C8">
+      <value>2n2</value>
+      <footprint>Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2</footprint>
+      <fields>
+        <field name="Comment">Film</field>
+        <field name="Manufacturer">WIMA</field>
+        <field name="Manufacturer Part No.">FKS2D012201A00JSSD</field>
+        <field name="Supplier">Tayda</field>
+        <field name="Supplier Part No.">A-935</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Comment" value="Film"/>
+      <property name="Supplier" value="Tayda"/>
+      <property name="Supplier Part No." value="A-935"/>
+      <property name="Manufacturer" value="WIMA"/>
+      <property name="Manufacturer Part No." value="FKS2D012201A00JSSD"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="noise.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f8dcc637-48c9-4590-943d-80ef04889704</tstamps>
+    </comp>
+    <comp ref="C9">
+      <value>0.1uF</value>
+      <footprint>Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm</footprint>
+      <fields>
+        <field name="Comment">Ceramic</field>
+        <field name="Manufacturer">AEC</field>
+        <field name="Manufacturer Part No.">0.1uF 50V Ceramic Disc Capacitor</field>
+        <field name="Supplier">Tayda</field>
+        <field name="Supplier Part No.">A-4008</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Supplier" value="Tayda"/>
+      <property name="Manufacturer" value="AEC"/>
+      <property name="Manufacturer Part No." value="0.1uF 50V Ceramic Disc Capacitor"/>
+      <property name="Supplier Part No." value="A-4008"/>
+      <property name="Comment" value="Ceramic"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="noise.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a1db9bfc-ef32-42a6-b1bd-0bbfb01a9284</tstamps>
+    </comp>
+    <comp ref="C10">
+      <value>0.1uF</value>
+      <footprint>Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm</footprint>
+      <fields>
+        <field name="Comment">Ceramic</field>
+        <field name="Manufacturer">AEC</field>
+        <field name="Manufacturer Part No.">0.1uF 50V Ceramic Disc Capacitor</field>
+        <field name="Supplier">Tayda</field>
+        <field name="Supplier Part No.">A-4008</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Supplier" value="Tayda"/>
+      <property name="Manufacturer" value="AEC"/>
+      <property name="Manufacturer Part No." value="0.1uF 50V Ceramic Disc Capacitor"/>
+      <property name="Supplier Part No." value="A-4008"/>
+      <property name="Comment" value="Ceramic"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="noise.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>730fe9f3-d207-4f3b-97b0-201a19714353</tstamps>
+    </comp>
+    <comp ref="C11">
+      <value>5n6</value>
+      <footprint>Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2</footprint>
+      <fields>
+        <field name="Comment">Film</field>
+        <field name="Manufacturer">ARCOTRONICS</field>
+        <field name="Manufacturer Part No.">5.6nF/100V</field>
+        <field name="Supplier">Tayda</field>
+        <field name="Supplier Part No.">A-423</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Comment" value="Film"/>
+      <property name="Supplier" value="Tayda"/>
+      <property name="Manufacturer" value="ARCOTRONICS"/>
+      <property name="Manufacturer Part No." value="5.6nF/100V"/>
+      <property name="Supplier Part No." value="A-423"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="noise.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7d72f059-1190-437c-b474-a47b9e2313a0</tstamps>
+    </comp>
+    <comp ref="D1">
+      <value>1N5818</value>
+      <footprint>Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal</footprint>
+      <datasheet>http://www.vishay.com/docs/88525/1n5817.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer">TEC</field>
+        <field name="Manufacturer Part No.">1N5817</field>
+        <field name="Supplier">Tayda</field>
+        <field name="Supplier Part No.">A-252</field>
+      </fields>
+      <libsource lib="Diode" part="1N5818" description="30V 1A Schottky Barrier Rectifier Diode, DO-41"/>
+      <property name="Supplier" value="Tayda"/>
+      <property name="Manufacturer" value="TEC"/>
+      <property name="Manufacturer Part No." value="1N5817"/>
+      <property name="Supplier Part No." value="A-252"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="noise.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c0c9a6f4-af3b-4ee9-a825-accf7541d9f6</tstamps>
+    </comp>
+    <comp ref="D2">
+      <value>1N5818</value>
+      <footprint>Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal</footprint>
+      <datasheet>http://www.vishay.com/docs/88525/1n5817.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer">TEC</field>
+        <field name="Manufacturer Part No.">1N5817</field>
+        <field name="Supplier">Tayda</field>
+        <field name="Supplier Part No.">A-252</field>
+      </fields>
+      <libsource lib="Diode" part="1N5818" description="30V 1A Schottky Barrier Rectifier Diode, DO-41"/>
+      <property name="Supplier" value="Tayda"/>
+      <property name="Manufacturer" value="TEC"/>
+      <property name="Manufacturer Part No." value="1N5817"/>
+      <property name="Supplier Part No." value="A-252"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="noise.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2d730285-31aa-4cf3-9c30-92692df67bca</tstamps>
+    </comp>
+    <comp ref="J1">
+      <value>Power Connector</value>
+      <footprint>Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Manufacturer">ULO Group</field>
+        <field name="Manufacturer Part No.">BHD10PHZT</field>
+        <field name="Supplier">Tayda</field>
+        <field name="Supplier Part No.">A-2939</field>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_02x05_Odd_Even" description="Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Manufacturer" value="ULO Group"/>
+      <property name="Manufacturer Part No." value="BHD10PHZT"/>
+      <property name="Supplier" value="Tayda"/>
+      <property name="Supplier Part No." value="A-2939"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="noise.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7fad6599-bea0-4947-bfcd-c40cdbe1b87c</tstamps>
+    </comp>
+    <comp ref="J2">
+      <value>WHITE_OUT</value>
+      <footprint>Tayda_Jacks:PJ-323M</footprint>
+      <fields>
+        <field name="Manufacturer">Tayda</field>
+        <field name="Manufacturer Part No.">PJ-323M</field>
+        <field name="Supplier">Tayda</field>
+        <field name="Supplier Part No.">A-2557</field>
+      </fields>
+      <libsource lib="Connector" part="AudioJack2_SwitchT" description="Audio Jack, 2 Poles (Mono / TS), Switched T Pole (Normalling)"/>
+      <property name="Supplier" value="Tayda"/>
+      <property name="Manufacturer" value="Tayda"/>
+      <property name="Manufacturer Part No." value="PJ-323M"/>
+      <property name="Supplier Part No." value="A-2557"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="noise.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>23f8ff13-fac8-4ad1-9ba3-7dfc1dc50956</tstamps>
+    </comp>
+    <comp ref="J3">
+      <value>BLUE_OUT</value>
+      <footprint>Tayda_Jacks:PJ-323M</footprint>
+      <fields>
+        <field name="Manufacturer">Tayda</field>
+        <field name="Manufacturer Part No.">PJ-323M</field>
+        <field name="Supplier">Tayda</field>
+        <field name="Supplier Part No.">A-2557</field>
+      </fields>
+      <libsource lib="Connector" part="AudioJack2_SwitchT" description="Audio Jack, 2 Poles (Mono / TS), Switched T Pole (Normalling)"/>
+      <property name="Supplier" value="Tayda"/>
+      <property name="Manufacturer" value="Tayda"/>
+      <property name="Manufacturer Part No." value="PJ-323M"/>
+      <property name="Supplier Part No." value="A-2557"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="noise.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1e25cf0a-67cb-47ab-a19a-7d8999765927</tstamps>
+    </comp>
+    <comp ref="J4">
+      <value>PINK_OUT</value>
+      <footprint>Tayda_Jacks:PJ-323M</footprint>
+      <fields>
+        <field name="Manufacturer">Tayda</field>
+        <field name="Manufacturer Part No.">PJ-323M</field>
+        <field name="Supplier">Tayda</field>
+        <field name="Supplier Part No.">A-2557</field>
+      </fields>
+      <libsource lib="Connector" part="AudioJack2_SwitchT" description="Audio Jack, 2 Poles (Mono / TS), Switched T Pole (Normalling)"/>
+      <property name="Supplier" value="Tayda"/>
+      <property name="Manufacturer" value="Tayda"/>
+      <property name="Manufacturer Part No." value="PJ-323M"/>
+      <property name="Supplier Part No." value="A-2557"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="noise.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>32b6ce07-ccc3-4654-9e54-1dbfc797a202</tstamps>
+    </comp>
+    <comp ref="Q1">
+      <value>BC548</value>
+      <footprint>Package_TO_SOT_THT:TO-92_Inline</footprint>
+      <datasheet>https://www.onsemi.com/pub/Collateral/BC550-D.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer">KEC</field>
+        <field name="Manufacturer Part No.">BC548B</field>
+        <field name="Supplier">Tayda</field>
+        <field name="Supplier Part No.">A-141</field>
+      </fields>
+      <libsource lib="Transistor_BJT" part="BC548" description="0.1A Ic, 30V Vce, Small Signal NPN Transistor, TO-92"/>
+      <property name="Supplier" value="Tayda"/>
+      <property name="Manufacturer" value="KEC"/>
+      <property name="Manufacturer Part No." value="BC548B"/>
+      <property name="Supplier Part No." value="A-141"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="noise.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3d01dbdc-9bc3-4ee1-a4bf-6d3be55846a4</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>100k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <fields>
+        <field name="Manufacturer">Royal Ohm</field>
+        <field name="Manufacturer Part No.">MF0W4FF1003A50</field>
+        <field name="Supplier">Tayda</field>
+        <field name="Supplier Part No.">A-2248</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Manufacturer" value="Royal Ohm"/>
+      <property name="Manufacturer Part No." value="MF0W4FF1003A50"/>
+      <property name="Supplier" value="Tayda"/>
+      <property name="Supplier Part No." value="A-2248"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="noise.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4df10721-607d-49ab-b396-d5ca6de9163e</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>100k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <fields>
+        <field name="Manufacturer">Royal Ohm</field>
+        <field name="Manufacturer Part No.">MF0W4FF1003A50</field>
+        <field name="Supplier">Tayda</field>
+        <field name="Supplier Part No.">A-2248</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Manufacturer" value="Royal Ohm"/>
+      <property name="Manufacturer Part No." value="MF0W4FF1003A50"/>
+      <property name="Supplier" value="Tayda"/>
+      <property name="Supplier Part No." value="A-2248"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="noise.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b6d1ed76-de4f-4c4d-b209-032b989640fc</tstamps>
+    </comp>
+    <comp ref="R3">
+      <value>680</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <fields>
+        <field name="Manufacturer">Royal Ohm</field>
+        <field name="Manufacturer Part No.">MF0W4FF6800A50</field>
+        <field name="Supplier">Tayda</field>
+        <field name="Supplier Part No.">A-2281</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Supplier" value="Tayda"/>
+      <property name="Manufacturer" value="Royal Ohm"/>
+      <property name="Manufacturer Part No." value="MF0W4FF6800A50"/>
+      <property name="Supplier Part No." value="A-2281"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="noise.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bddfd24d-d893-473c-99e9-1ff42708b1de</tstamps>
+    </comp>
+    <comp ref="R4">
+      <value>100k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <fields>
+        <field name="Manufacturer">Royal Ohm</field>
+        <field name="Manufacturer Part No.">MF0W4FF1003A50</field>
+        <field name="Supplier">Tayda</field>
+        <field name="Supplier Part No.">A-2248</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Manufacturer" value="Royal Ohm"/>
+      <property name="Manufacturer Part No." value="MF0W4FF1003A50"/>
+      <property name="Supplier" value="Tayda"/>
+      <property name="Supplier Part No." value="A-2248"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="noise.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>08d291a6-f9ac-429a-8f92-c7f657c7ea3c</tstamps>
+    </comp>
+    <comp ref="R5">
+      <value>100k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <fields>
+        <field name="Manufacturer">Royal Ohm</field>
+        <field name="Manufacturer Part No.">MF0W4FF1003A50</field>
+        <field name="Supplier">Tayda</field>
+        <field name="Supplier Part No.">A-2248</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Manufacturer" value="Royal Ohm"/>
+      <property name="Manufacturer Part No." value="MF0W4FF1003A50"/>
+      <property name="Supplier" value="Tayda"/>
+      <property name="Supplier Part No." value="A-2248"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="noise.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>032be104-4955-49fb-aeab-38b37e179d16</tstamps>
+    </comp>
+    <comp ref="R6">
+      <value>4.7k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <fields>
+        <field name="Manufacturer">Royal Ohm</field>
+        <field name="Manufacturer Part No.">MF0W4FF4701A50</field>
+        <field name="Supplier">Tayda</field>
+        <field name="Supplier Part No.">A-2310</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Supplier" value="Tayda"/>
+      <property name="Manufacturer" value="Royal Ohm"/>
+      <property name="Manufacturer Part No." value="MF0W4FF4701A50"/>
+      <property name="Supplier Part No." value="A-2310"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="noise.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>82ea11de-90f5-4031-97a8-0034fd9ebf9b</tstamps>
+    </comp>
+    <comp ref="R7">
+      <value>1M</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <fields>
+        <field name="Manufacturer">Royal Ohm</field>
+        <field name="Manufacturer Part No.">MF0W4FF1004A50</field>
+        <field name="Supplier">Tayda</field>
+        <field name="Supplier Part No.">A-2277</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Manufacturer" value="Royal Ohm"/>
+      <property name="Manufacturer Part No." value="MF0W4FF1004A50"/>
+      <property name="Supplier" value="Tayda"/>
+      <property name="Supplier Part No." value="A-2277"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="noise.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>eee013c0-d2c8-4caf-af28-7d4ff9ea739c</tstamps>
+    </comp>
+    <comp ref="R8">
+      <value>470k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <fields>
+        <field name="Manufacturer">Royal Ohm</field>
+        <field name="Manufacturer Part No.">MF0W4FF4703A50</field>
+        <field name="Supplier">Tayda</field>
+        <field name="Supplier Part No.">A-2180</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Manufacturer" value="Royal Ohm"/>
+      <property name="Manufacturer Part No." value="MF0W4FF4703A50"/>
+      <property name="Supplier" value="Tayda"/>
+      <property name="Supplier Part No." value="A-2180"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="noise.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3da06097-afc7-4cfd-aeed-64eb78bdbea5</tstamps>
+    </comp>
+    <comp ref="R9">
+      <value>10k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <fields>
+        <field name="Manufacturer">Royal Ohm</field>
+        <field name="Manufacturer Part No.">MF0W4FF1002A50</field>
+        <field name="Supplier">Tayda</field>
+        <field name="Supplier Part No.">A-2203</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Manufacturer" value="Royal Ohm"/>
+      <property name="Manufacturer Part No." value="MF0W4FF1002A50"/>
+      <property name="Supplier" value="Tayda"/>
+      <property name="Supplier Part No." value="A-2203"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="noise.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>95812527-8ccd-4ebd-b75a-507caf3579ce</tstamps>
+    </comp>
+    <comp ref="R10">
+      <value>47k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <fields>
+        <field name="Manufacturer">Royal Ohm</field>
+        <field name="Manufacturer Part No.">MF0W4FF4702A50</field>
+        <field name="Supplier">Tayda</field>
+        <field name="Supplier Part No.">A-2279</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Supplier" value="Tayda"/>
+      <property name="Manufacturer" value="Royal Ohm"/>
+      <property name="Manufacturer Part No." value="MF0W4FF4702A50"/>
+      <property name="Supplier Part No." value="A-2279"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="noise.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a216a344-1bbe-4bbb-be13-35d9f1bd61df</tstamps>
+    </comp>
+    <comp ref="R11">
+      <value>20k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <fields>
+        <field name="Manufacturer">Royal Ohm</field>
+        <field name="Manufacturer Part No.">MF0W4FF2002A50</field>
+        <field name="Supplier">Tayda</field>
+        <field name="Supplier Part No.">A-2339</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Manufacturer" value="Royal Ohm"/>
+      <property name="Manufacturer Part No." value="MF0W4FF2002A50"/>
+      <property name="Supplier" value="Tayda"/>
+      <property name="Supplier Part No." value="A-2339"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="noise.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>59022724-8109-45a8-8d94-33e642bf8422</tstamps>
+    </comp>
+    <comp ref="R12">
+      <value>470k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <fields>
+        <field name="Manufacturer">Royal Ohm</field>
+        <field name="Manufacturer Part No.">MF0W4FF4703A50</field>
+        <field name="Supplier">Tayda</field>
+        <field name="Supplier Part No.">A-2180</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Supplier" value="Tayda"/>
+      <property name="Manufacturer" value="Royal Ohm"/>
+      <property name="Manufacturer Part No." value="MF0W4FF4703A50"/>
+      <property name="Supplier Part No." value="A-2180"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="noise.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e4ba4d2e-1aac-4eeb-9c22-023e74c7fc7d</tstamps>
+    </comp>
+    <comp ref="R13">
+      <value>100k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <fields>
+        <field name="Manufacturer">Royal Ohm</field>
+        <field name="Manufacturer Part No.">MF0W4FF1003A50</field>
+        <field name="Supplier">Tayda</field>
+        <field name="Supplier Part No.">A-2248</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Supplier" value="Tayda"/>
+      <property name="Manufacturer" value="Royal Ohm"/>
+      <property name="Manufacturer Part No." value="MF0W4FF1003A50"/>
+      <property name="Supplier Part No." value="A-2248"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="noise.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>17466b01-c60c-4659-bed4-58a6da45bf94</tstamps>
+    </comp>
+    <comp ref="R14">
+      <value>22k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <fields>
+        <field name="Manufacturer">Royal Ohm</field>
+        <field name="Manufacturer Part No.">MF0W4FF2202A50</field>
+        <field name="Supplier">Tayda</field>
+        <field name="Supplier Part No.">A-2339</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Supplier" value="Tayda"/>
+      <property name="Manufacturer" value="Royal Ohm"/>
+      <property name="Manufacturer Part No." value="MF0W4FF2202A50"/>
+      <property name="Supplier Part No." value="A-2339"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="noise.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e8035996-4843-4e94-bf42-638925ffcda8</tstamps>
+    </comp>
+    <comp ref="R15">
+      <value>33k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <fields>
+        <field name="Manufacturer">Royal Ohm</field>
+        <field name="Manufacturer Part No.">MF0W4FF3302A50</field>
+        <field name="Supplier">Tayda</field>
+        <field name="Supplier Part No.">A-2290</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Manufacturer" value="Royal Ohm"/>
+      <property name="Manufacturer Part No." value="MF0W4FF3302A50"/>
+      <property name="Supplier" value="Tayda"/>
+      <property name="Supplier Part No." value="A-2290"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="noise.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cc713ed2-742f-4145-bc56-fa6e16f9ec76</tstamps>
+    </comp>
+    <comp ref="R16">
+      <value>100k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <fields>
+        <field name="Manufacturer">Royal Ohm</field>
+        <field name="Manufacturer Part No.">MF0W4FF1003A50</field>
+        <field name="Supplier">Tayda</field>
+        <field name="Supplier Part No.">A-2248</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Manufacturer" value="Royal Ohm"/>
+      <property name="Manufacturer Part No." value="MF0W4FF1003A50"/>
+      <property name="Supplier" value="Tayda"/>
+      <property name="Supplier Part No." value="A-2248"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="noise.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>523c0ced-4439-4893-ad05-b7d27fcd9590</tstamps>
+    </comp>
+    <comp ref="R17">
+      <value>1k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <fields>
+        <field name="Manufacturer">Royal Ohm</field>
+        <field name="Manufacturer Part No.">MF0W4FF1001A50</field>
+        <field name="Supplier">Tayda</field>
+        <field name="Supplier Part No.">A-2200</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Supplier" value="Tayda"/>
+      <property name="Manufacturer" value="Royal Ohm"/>
+      <property name="Manufacturer Part No." value="MF0W4FF1001A50"/>
+      <property name="Supplier Part No." value="A-2200"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="noise.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>aa0dfa33-648e-4f05-a6c8-4abb5e6cdeca</tstamps>
+    </comp>
+    <comp ref="R18">
+      <value>1k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <fields>
+        <field name="Manufacturer">Royal Ohm</field>
+        <field name="Manufacturer Part No.">MF0W4FF1001A50</field>
+        <field name="Supplier">Tayda</field>
+        <field name="Supplier Part No.">A-2200</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Supplier" value="Tayda"/>
+      <property name="Manufacturer" value="Royal Ohm"/>
+      <property name="Manufacturer Part No." value="MF0W4FF1001A50"/>
+      <property name="Supplier Part No." value="A-2200"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="noise.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4ad90c7c-c9f6-4589-b20f-4012c82823eb</tstamps>
+    </comp>
+    <comp ref="R19">
+      <value>1k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <fields>
+        <field name="Manufacturer">Royal Ohm</field>
+        <field name="Manufacturer Part No.">MF0W4FF1001A50</field>
+        <field name="Supplier">Tayda</field>
+        <field name="Supplier Part No.">A-2200</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Supplier" value="Tayda"/>
+      <property name="Manufacturer" value="Royal Ohm"/>
+      <property name="Manufacturer Part No." value="MF0W4FF1001A50"/>
+      <property name="Supplier Part No." value="A-2200"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="noise.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7429de38-547f-4f75-beeb-45d16970e900</tstamps>
+    </comp>
+    <comp ref="U1">
+      <value>TL074</value>
+      <footprint>Package_DIP:DIP-14_W7.62mm_Socket</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/tl071.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer">VARIOUS</field>
+        <field name="Manufacturer Part No.">TL074CN</field>
+        <field name="Supplier">Tayda</field>
+        <field name="Supplier Part No.">A-1138</field>
+      </fields>
+      <libsource lib="Amplifier_Operational" part="TL074" description="Quad Low-Noise JFET-Input Operational Amplifiers, DIP-14/SOIC-14"/>
+      <property name="Supplier" value="Tayda"/>
+      <property name="Manufacturer" value="VARIOUS"/>
+      <property name="Manufacturer Part No." value="TL074CN"/>
+      <property name="Supplier Part No." value="A-1138"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="noise.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f782d2f7-d857-4d8d-843e-00346afbf382 6880fdec-35b9-4b25-96bd-b6f48753545d 53ce85e1-e4d2-4646-8436-3c99b46bf08a 51845484-cab5-4fea-8de9-330cc78cdfee 146ab120-21e4-4840-84de-cf02b8bd3de7</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Amplifier_Operational" part="TL074">
+      <description>Quad Low-Noise JFET-Input Operational Amplifiers, DIP-14/SOIC-14</description>
+      <docs>http://www.ti.com/lit/ds/symlink/tl071.pdf</docs>
+      <footprints>
+        <fp>SOIC*3.9x8.7mm*P1.27mm*</fp>
+        <fp>DIP*W7.62mm*</fp>
+        <fp>TSSOP*4.4x5mm*P0.65mm*</fp>
+        <fp>SSOP*5.3x6.2mm*P0.65mm*</fp>
+        <fp>MSOP*3x3mm*P0.5mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TL074</field>
+        <field name="Datasheet">http://www.ti.com/lit/ds/symlink/tl071.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="output"/>
+        <pin num="2" name="-" type="input"/>
+        <pin num="3" name="+" type="input"/>
+        <pin num="4" name="V+" type="power_in"/>
+        <pin num="5" name="+" type="input"/>
+        <pin num="6" name="-" type="input"/>
+        <pin num="7" name="" type="output"/>
+        <pin num="8" name="" type="output"/>
+        <pin num="9" name="-" type="input"/>
+        <pin num="10" name="+" type="input"/>
+        <pin num="11" name="V-" type="power_in"/>
+        <pin num="12" name="+" type="input"/>
+        <pin num="13" name="-" type="input"/>
+        <pin num="14" name="" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="AudioJack2_SwitchT">
+      <description>Audio Jack, 2 Poles (Mono / TS), Switched T Pole (Normalling)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Jack*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">AudioJack2_SwitchT</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="S" name="" type="passive"/>
+        <pin num="T" name="" type="passive"/>
+        <pin num="TN" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_02x05_Odd_Even">
+      <description>Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_2x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_02x05_Odd_Even</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+        <pin num="9" name="Pin_9" type="passive"/>
+        <pin num="10" name="Pin_10" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C_Polarized">
+      <description>Polarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Polarized</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Diode" part="1N5818">
+      <description>30V 1A Schottky Barrier Rectifier Diode, DO-41</description>
+      <docs>http://www.vishay.com/docs/88525/1n5817.pdf</docs>
+      <footprints>
+        <fp>D*DO?41*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">1N5818</field>
+        <field name="Footprint">Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal</field>
+        <field name="Datasheet">http://www.vishay.com/docs/88525/1n5817.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Transistor_BJT" part="BC548">
+      <description>0.1A Ic, 30V Vce, Small Signal NPN Transistor, TO-92</description>
+      <docs>https://www.onsemi.com/pub/Collateral/BC550-D.pdf</docs>
+      <footprints>
+        <fp>TO?92*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">BC548</field>
+        <field name="Footprint">Package_TO_SOT_THT:TO-92_Inline</field>
+        <field name="Datasheet">https://www.onsemi.com/pub/Collateral/BC550-D.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="C" type="passive"/>
+        <pin num="2" name="B" type="input"/>
+        <pin num="3" name="E" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Amplifier_Operational">
+      <uri>/usr/share/kicad/symbols//Amplifier_Operational.kicad_sym</uri>
+    </library>
+    <library logical="Connector">
+      <uri>/usr/share/kicad/symbols//Connector.kicad_sym</uri>
+    </library>
+    <library logical="Connector_Generic">
+      <uri>/usr/share/kicad/symbols//Connector_Generic.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>/usr/share/kicad/symbols//Device.kicad_sym</uri>
+    </library>
+    <library logical="Diode">
+      <uri>/usr/share/kicad/symbols//Diode.kicad_sym</uri>
+    </library>
+    <library logical="Transistor_BJT">
+      <uri>/usr/share/kicad/symbols//Transistor_BJT.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+12V">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="C10" pin="1" pintype="passive"/>
+      <node ref="D1" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="U1" pin="4" pinfunction="V+" pintype="power_in"/>
+    </net>
+    <net code="2" name="-12V">
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="C9" pin="1" pintype="passive"/>
+      <node ref="D2" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="U1" pin="11" pinfunction="V-" pintype="power_in"/>
+    </net>
+    <net code="3" name="GND">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C10" pin="2" pintype="passive"/>
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="C9" pin="2" pintype="passive"/>
+      <node ref="J1" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="J1" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="J1" pin="5" pinfunction="Pin_5" pintype="passive"/>
+      <node ref="J1" pin="6" pinfunction="Pin_6" pintype="passive"/>
+      <node ref="J1" pin="7" pinfunction="Pin_7" pintype="passive"/>
+      <node ref="J1" pin="8" pinfunction="Pin_8" pintype="passive"/>
+      <node ref="J2" pin="S" pintype="passive"/>
+      <node ref="J3" pin="S" pintype="passive"/>
+      <node ref="J4" pin="S" pintype="passive"/>
+      <node ref="Q1" pin="2" pinfunction="B" pintype="input"/>
+      <node ref="R10" pin="2" pintype="passive"/>
+      <node ref="R11" pin="2" pintype="passive"/>
+      <node ref="R12" pin="2" pintype="passive"/>
+      <node ref="R13" pin="2" pintype="passive"/>
+      <node ref="R14" pin="2" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="R3" pin="2" pintype="passive"/>
+      <node ref="R6" pin="2" pintype="passive"/>
+      <node ref="U1" pin="12" pinfunction="+" pintype="input"/>
+    </net>
+    <net code="4" name="Net-(C3-Pad1)">
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="Q1" pin="3" pinfunction="E" pintype="passive"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+    </net>
+    <net code="5" name="Net-(C3-Pad2)">
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="U1" pin="3" pinfunction="+" pintype="input"/>
+    </net>
+    <net code="6" name="Net-(C4-Pad1)">
+      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="C5" pin="1" pintype="passive"/>
+      <node ref="C6" pin="1" pintype="passive"/>
+      <node ref="R17" pin="1" pintype="passive"/>
+      <node ref="R4" pin="2" pintype="passive"/>
+      <node ref="R5" pin="1" pintype="passive"/>
+      <node ref="U1" pin="1" pintype="output"/>
+    </net>
+    <net code="7" name="Net-(C4-Pad2)">
+      <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="R7" pin="1" pintype="passive"/>
+    </net>
+    <net code="8" name="Net-(C5-Pad2)">
+      <node ref="C5" pin="2" pintype="passive"/>
+      <node ref="R8" pin="1" pintype="passive"/>
+    </net>
+    <net code="9" name="Net-(C6-Pad2)">
+      <node ref="C6" pin="2" pintype="passive"/>
+      <node ref="R9" pin="1" pintype="passive"/>
+    </net>
+    <net code="10" name="Net-(C7-Pad1)">
+      <node ref="C7" pin="1" pintype="passive"/>
+      <node ref="R6" pin="1" pintype="passive"/>
+    </net>
+    <net code="11" name="Net-(C8-Pad1)">
+      <node ref="C8" pin="1" pintype="passive"/>
+      <node ref="R10" pin="1" pintype="passive"/>
+    </net>
+    <net code="12" name="Net-(C11-Pad1)">
+      <node ref="C11" pin="1" pintype="passive"/>
+      <node ref="R12" pin="1" pintype="passive"/>
+    </net>
+    <net code="13" name="Net-(C11-Pad2)">
+      <node ref="C11" pin="2" pintype="passive"/>
+      <node ref="C7" pin="2" pintype="passive"/>
+      <node ref="C8" pin="2" pintype="passive"/>
+      <node ref="R5" pin="2" pintype="passive"/>
+      <node ref="U1" pin="5" pinfunction="+" pintype="input"/>
+    </net>
+    <net code="14" name="Net-(D1-Pad2)">
+      <node ref="D1" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="J1" pin="10" pinfunction="Pin_10" pintype="passive"/>
+      <node ref="J1" pin="9" pinfunction="Pin_9" pintype="passive"/>
+    </net>
+    <net code="15" name="Net-(D2-Pad1)">
+      <node ref="D2" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="J1" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J1" pin="2" pinfunction="Pin_2" pintype="passive"/>
+    </net>
+    <net code="16" name="Net-(J2-PadT)">
+      <node ref="J2" pin="T" pintype="passive"/>
+      <node ref="R17" pin="2" pintype="passive"/>
+    </net>
+    <net code="17" name="Net-(J3-PadT)">
+      <node ref="J3" pin="T" pintype="passive"/>
+      <node ref="R18" pin="2" pintype="passive"/>
+    </net>
+    <net code="18" name="Net-(J4-PadT)">
+      <node ref="J4" pin="T" pintype="passive"/>
+      <node ref="R19" pin="2" pintype="passive"/>
+    </net>
+    <net code="19" name="Net-(R3-Pad1)">
+      <node ref="R3" pin="1" pintype="passive"/>
+      <node ref="R4" pin="1" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="-" pintype="input"/>
+    </net>
+    <net code="20" name="Net-(R11-Pad1)">
+      <node ref="R11" pin="1" pintype="passive"/>
+      <node ref="R7" pin="2" pintype="passive"/>
+      <node ref="R8" pin="2" pintype="passive"/>
+      <node ref="R9" pin="2" pintype="passive"/>
+      <node ref="U1" pin="10" pinfunction="+" pintype="input"/>
+    </net>
+    <net code="21" name="Net-(R13-Pad1)">
+      <node ref="R13" pin="1" pintype="passive"/>
+      <node ref="R15" pin="1" pintype="passive"/>
+      <node ref="U1" pin="9" pinfunction="-" pintype="input"/>
+    </net>
+    <net code="22" name="Net-(R14-Pad1)">
+      <node ref="R14" pin="1" pintype="passive"/>
+      <node ref="R16" pin="1" pintype="passive"/>
+      <node ref="U1" pin="6" pinfunction="-" pintype="input"/>
+    </net>
+    <net code="23" name="Net-(R15-Pad2)">
+      <node ref="R15" pin="2" pintype="passive"/>
+      <node ref="R18" pin="1" pintype="passive"/>
+      <node ref="U1" pin="8" pintype="output"/>
+    </net>
+    <net code="24" name="Net-(R16-Pad2)">
+      <node ref="R16" pin="2" pintype="passive"/>
+      <node ref="R19" pin="1" pintype="passive"/>
+      <node ref="U1" pin="7" pintype="output"/>
+    </net>
+    <net code="25" name="Net-(U1-Pad13)">
+      <node ref="U1" pin="13" pinfunction="-" pintype="input"/>
+      <node ref="U1" pin="14" pintype="output"/>
+    </net>
+    <net code="26" name="unconnected-(J2-PadTN)">
+      <node ref="J2" pin="TN" pintype="passive+no_connect"/>
+    </net>
+    <net code="27" name="unconnected-(J3-PadTN)">
+      <node ref="J3" pin="TN" pintype="passive+no_connect"/>
+    </net>
+    <net code="28" name="unconnected-(J4-PadTN)">
+      <node ref="J4" pin="TN" pintype="passive+no_connect"/>
+    </net>
+    <net code="29" name="unconnected-(Q1-Pad1)">
+      <node ref="Q1" pin="1" pinfunction="C" pintype="passive+no_connect"/>
+    </net>
+  </nets>
+</export>
