@@ -11,10 +11,10 @@
 
 - keyboard - Volt per octave keyboard and sequencer
 - quantizer - Digital quantizer
+- Sample and Hold
 
 ## Future Modules:
 
-- Sample and Hold
 - Attenuverter
 - VCLFO
 - Slew Limiter
