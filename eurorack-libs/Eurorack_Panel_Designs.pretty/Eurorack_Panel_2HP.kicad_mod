@@ -1,0 +1,19 @@
+(footprint "Eurorack_Panel_2HP" (version 20211014) (generator pcbnew)
+  (layer "F.Cu")
+  (tedit 0)
+  (fp_text reference "REF**" (at 0 -0.5 unlocked) (layer "F.SilkS") hide
+    (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp 67356c77-8d7f-47d8-a368-275926a32ebe)
+  )
+  (fp_text value "Eurorack_Panel_2HP" (at 0 1 unlocked) (layer "F.Fab") hide
+    (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp 65b31ac8-351c-4510-b5de-2d63b29677f5)
+  )
+  (fp_text user "${REFERENCE}" (at 0 2.5 unlocked) (layer "F.Fab") hide
+    (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp 1db50c30-78bb-47ec-b4df-466f56c25a2f)
+  )
+  (fp_rect (start 0 0) (end 9.8 128.5) (layer "Edge.Cuts") (width 0.1) (fill none) (tstamp f7ac952f-728b-4752-9e50-07ff6f6eda02))
+  (pad "" thru_hole oval (at 4.9 3) (size 7.2 4) (drill oval 6.4 3.2) (layers *.Cu *.Mask) (tstamp 0e70120a-f3b5-4050-aa65-a71adcd9984f))
+  (pad "" thru_hole oval (at 4.9 125.5) (size 7.2 4) (drill oval 6.4 3.2) (layers *.Cu *.Mask) (tstamp 7aea4e6f-6b9e-48c9-98c4-fb9d8a686a7a))
+)
