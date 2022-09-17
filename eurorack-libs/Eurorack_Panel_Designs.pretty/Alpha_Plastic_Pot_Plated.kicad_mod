@@ -2,8 +2,8 @@
   (layer "F.Cu")
   (tedit 0)
   (attr through_hole)
-  (fp_text reference "REF**" (at 0.0508 -5.1308 unlocked) (layer "F.SilkS")
-    (effects (font (size 1 1) (thickness 0.15)))
+  (fp_text reference "REF**" (at 0 -6.5 unlocked) (layer "F.SilkS")
+    (effects (font (size 1.5 1.5) (thickness 0.3)))
     (tstamp be5fed31-96b5-4d44-9ed3-fcfe0186d5bc)
   )
   (fp_text value "Alpha_Plastic_Pot_Plated" (at 0 -5.4356 unlocked) (layer "F.Fab") hide
