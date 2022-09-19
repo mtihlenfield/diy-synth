@@ -1,4 +1,6 @@
 (fp_lib_table
   (lib (name "Alpha_Pots")(type "KiCad")(uri "/home/strav/devel/diy-synth/eurorack-libs/Alpha_Pots.pretty")(options "")(descr ""))
   (lib (name "Tayda_Jacks")(type "KiCad")(uri "/home/strav/devel/diy-synth/eurorack-libs/Tayda_Jacks.pretty")(options "")(descr ""))
+  (lib (name "AudioJacks")(type "KiCad")(uri "/home/strav/devel/diy-synth/eurorack-libs/AudioJacks/AudioJacks.pretty")(options "")(descr ""))
+  (lib (name "Panelization")(type "KiCad")(uri "/home/strav/devel/diy-synth/eurorack-libs/Panelization.pretty")(options "")(descr ""))
 )
