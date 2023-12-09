@@ -150,11 +150,7 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [
-      "pin_to_pin|901700|749300|3f47ecc2-2206-4569-9a05-a7e8dd848e35|8b516243-220c-4454-bbb0-4383d67b87b5",
-      "pin_to_pin|901700|749300|3f47ecc2-2206-4569-9a05-a7e8dd848e35|c16cba91-ca3d-4123-bbb4-515fb4cbde0e",
-      "pin_to_pin|901700|749300|3f47ecc2-2206-4569-9a05-a7e8dd848e35|d1cdd57d-8a97-447f-b8e0-7835e4df93eb"
-    ],
+    "erc_exclusions": [],
     "meta": {
       "version": 0
     },
@@ -480,10 +476,6 @@
     [
       "679aab57-7a27-4204-9526-edba148bc933",
       "input_output_jacks"
-    ],
-    [
-      "25f9996e-fca5-4a93-99a2-b5b3536e9922",
-      "analog_input"
     ]
   ],
   "text_variables": {}

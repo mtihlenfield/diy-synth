@@ -16,6 +16,7 @@
 #define OCTAVE_SHIFT_MAX 1
 #define OCTAVE_SHIFT_MIN -1
 
+// TODO middle C should be C4
 float cv_octave[12] = {
     0.0833, 0.1667, 0.2550, 0.3333, 0.4167,
     0.5000, 0.5833, 0.6667, 0.7500, 0.8333,
@@ -96,6 +97,9 @@ static inline void play_last_note(struct keyboard_state *state)
 
     set_gate(1);
     float cv = key_to_cv(state, current_note);
+
+    printf("Setting CV to %fv\n", cv);
+
     mcp4921_set_output(&state->dac, cv / CV_OPAMP_GAIN);
 }
 
@@ -169,6 +173,7 @@ int main(void)
     }
 
     multicore_launch_core1(io_main);
+    mcp4921_set_output(&g_state.dac, 1.0 / CV_OPAMP_GAIN);
 
     while (1) {
         while (io_event_queue_ready()) {
@@ -179,23 +184,15 @@ int main(void)
             io_event_unpack(io_event, &event_type, &event_val);
             printf("io event: type: %d, id: %d\n", event_type, event_val);
 
-	    // switch (event_type) {
-            //     case IO_KEY_PRESSED:
-	    //     case IO_KEY_RELEASED:
-            //         if (io_is_keybed_key(event_val)) {
-            //             handle_keybed_event(event_type, event_val);
-            //         } else {
-            //             handle_func_key_event(event_type, event_val);
-            //         }
-
-	    //         break;
-	    //     case IO_CLK_SPEED_CHANGED:
-	    //     case IO_CLK_DIV_CHANGED:
-	    //     case IO_MODE_CHANGED:
-	    //     case IO_SUB_MODE_CHANGED:
-	    //         printf("This IO event not yet implemented\n");
-	    //         break;
-	    // }
+	    switch (event_type) {
+                case IO_KEY_PRESSED:
+	        case IO_KEY_RELEASED:
+                    if (io_is_keybed_key(event_val)) {
+                        handle_keybed_event(event_type, event_val);
+                    } else {
+                        handle_func_key_event(event_type, event_val);
+                    }
+	    }
         }
     }
 
