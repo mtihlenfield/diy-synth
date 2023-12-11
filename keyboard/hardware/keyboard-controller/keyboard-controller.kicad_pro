@@ -56,12 +56,18 @@
         }
       ],
       "drc_exclusions": [
+        "silk_over_copper|120400000|125000000|0937f5b4-2277-4fd2-ad23-3dd57eada844|b5b7de65-5189-4141-ba96-277ac70414f2",
+        "silk_over_copper|129600000|125000000|0937f5b4-2277-4fd2-ad23-3dd57eada844|8e5804ff-db4e-404e-93f9-f6998625132d",
         "silk_over_copper|261378299|70391700|cd3120ce-3528-4c37-9287-62587f90b00b|0f5fbfc7-c6e4-4e71-8402-ebb5ee0b77bd",
         "silk_over_copper|261378299|70437243|cd3120ce-3528-4c37-9287-62587f90b00b|0f5fbfc7-c6e4-4e71-8402-ebb5ee0b77bd",
         "silk_over_copper|262028299|70391700|a08f498d-9b33-4b59-b3b2-8245f14de59f|0f5fbfc7-c6e4-4e71-8402-ebb5ee0b77bd",
         "silk_over_copper|262028299|70437243|a08f498d-9b33-4b59-b3b2-8245f14de59f|0f5fbfc7-c6e4-4e71-8402-ebb5ee0b77bd",
+        "silk_over_copper|270475000|149410542|549cc7a3-3629-4446-8acb-728376d74039|efdbf865-7af7-414d-8085-fe9e5942a0fa",
+        "silk_over_copper|271125000|149410542|a59b8a0a-5e2d-444c-ad06-334be061c0d8|efdbf865-7af7-414d-8085-fe9e5942a0fa",
         "silk_over_copper|282246282|70307100|d87ae83f-e26c-4e4a-87fa-2b1bc7aba021|4a11f20e-71ce-40a8-a700-0785e06b87fa",
         "silk_over_copper|282896282|70307100|108a20e2-5cdf-4475-8b77-9dfd3bdbc7c5|4a11f20e-71ce-40a8-a700-0785e06b87fa",
+        "silk_over_copper|284075000|149410542|c9cdd7ed-d397-4121-8c77-ce68a167e71b|a8963fb5-a286-4819-ab18-1422c2d734ec",
+        "silk_over_copper|284725000|149410542|d88f0936-3aec-4fde-8416-3b09b2c2e08d|a8963fb5-a286-4819-ab18-1422c2d734ec",
         "silk_over_copper|303114215|70580939|e65eeda2-4ae7-44ce-8676-3a763169608f|0daabaac-cc6c-41d4-951b-429d2aa6a736",
         "silk_over_copper|303764215|70580939|f4015cc9-f980-4452-a2dc-dabee7bf9041|0daabaac-cc6c-41d4-951b-429d2aa6a736",
         "silk_over_copper|323982200|70422342|1393d29a-1320-4658-bd58-7a14158d7aa4|45c9922f-77ad-4bb6-a258-7b79489b14e9",
@@ -132,7 +138,8 @@
         "use_height_for_length_calcs": true
       },
       "track_widths": [
-        0.0
+        0.0,
+        0.75
       ],
       "via_dimensions": [
         {
