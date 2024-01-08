@@ -921,10 +921,10 @@
       (net 2 "GND") (pintype "passive") (tstamp 827d1928-54e2-4bfe-b256-3097a4664679))
     (pad "3" thru_hole roundrect (at -2.5 4.8 270) (size 3.8 3.6) (drill oval 3.3 1.1) (layers *.Cu *.Mask) (roundrect_rratio 0.25)
       (net 6 "unconnected-(J2-Pad3)") (pintype "passive+no_connect") (tstamp f2cbdd2c-a60a-44fc-9140-46dab4a46374))
-    (model "${KICAD6_3DMODEL_DIR}/Connector_BarrelJack.3dshapes/BarrelJack_Horizontal.wrl"
-      (offset (xyz 0 0 0))
+    (model "../libraries/WEALTH_METAL_Barrel_Jacks.pretty/BarrelJack_Horizontal_2.1mm_WEALTH_METAL.step"
+      (offset (xyz -6.25 0 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz 0 0 90))
     )
   )
 
@@ -1249,17 +1249,17 @@
       (net 33 "Net-(J6-PadT)") (pintype "passive") (tstamp ab72b5fe-a309-452f-826c-7e8b4f590215))
     (pad "TN" thru_hole roundrect locked (at 0 3.38) (size 2.6 2.6) (drill oval 1.6 0.6) (layers *.Cu *.Mask) (roundrect_rratio 0.25)
       (net 34 "unconnected-(J6-PadTN)") (pintype "passive+no_connect") (tstamp efdbf865-7af7-414d-8085-fe9e5942a0fa))
-    (model "${KISYS3DMOD}/AudioJacks.3dshapes/PJ398SM.step"
+    (model "../libraries/AudioJacks/AudioJacks.3dshapes/PJ398SM.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model "${KISYS3DMOD}/AudioJacks.3dshapes/PJ398SM_Hex_nut.step"
+    (model "../libraries/AudioJacks/AudioJacks.3dshapes/PJ398SM_Hex_nut.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model "${KISYS3DMOD}/AudioJacks.3dshapes/PJ398SM_Knurl_nut.step"
+    (model "../libraries/AudioJacks/AudioJacks.3dshapes/PJ398SM_Knurl_nut.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -2213,17 +2213,17 @@
       (net 4 "Net-(J5-PadT)") (pintype "passive") (tstamp 60631ad4-8c94-4aa4-8471-f2547b49ba67))
     (pad "TN" thru_hole roundrect locked (at 0 3.38) (size 2.6 2.6) (drill oval 1.6 0.6) (layers *.Cu *.Mask) (roundrect_rratio 0.25)
       (net 5 "unconnected-(J5-PadTN)") (pintype "passive+no_connect") (tstamp a8963fb5-a286-4819-ab18-1422c2d734ec))
-    (model "${KISYS3DMOD}/AudioJacks.3dshapes/PJ398SM.step"
+    (model "../libraries/AudioJacks/AudioJacks.3dshapes/PJ398SM.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model "${KISYS3DMOD}/AudioJacks.3dshapes/PJ398SM_Hex_nut.step"
+    (model "../libraries/AudioJacks/AudioJacks.3dshapes/PJ398SM_Hex_nut.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model "${KISYS3DMOD}/AudioJacks.3dshapes/PJ398SM_Knurl_nut.step"
+    (model "../libraries/AudioJacks/AudioJacks.3dshapes/PJ398SM_Knurl_nut.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -3288,7 +3288,7 @@
       (net 20 "/SWDIO") (pinfunction "SWDIO") (pintype "bidirectional") (tstamp 173e428c-95a5-4843-b131-e8b66ff8df68))
     (pad "43" thru_hole oval (at 2.54 23.9 270) (size 1.7 1.7) (drill 1.02) (layers *.Cu *.Mask)
       (net 20 "/SWDIO") (pinfunction "SWDIO") (pintype "bidirectional") (tstamp 58c02e7d-b7f6-4ed8-9cb6-7a65bbc3a398))
-    (model "C:/Users/ncara/OneDrive/IoT/Tools/KiCad/RP-Pico Libraries/Pico.wrl"
+    (model "/home/strav/devel/diy-synth/keyboard/hardware/libraries/KiCad-RP-Pico/RP-Pico Libraries/Pico.wrl"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -3407,7 +3407,34 @@
   (dimension (type aligned) (layer "Dwgs.User") (tstamp 5b73bcb3-6505-4264-b969-10a98cdd8e33)
     (pts (xy 105 125) (xy 300 125))
     (height -9)
-    (gr_text "195.0000 mm" (at 202.5 114.2) (layer "Dwgs.User") (tstamp 81a0d29f-e0ca-4378-856b-79709af81094)
+    (gr_text "195.0000 mm" (at 202.5 114.2) (layer "Dwgs.User") (tstamp 5b73bcb3-6505-4264-b969-10a98cdd8e33)
+      (effects (font (size 1.5 1.5) (thickness 0.3)))
+    )
+    (format (units 3) (units_format 1) (precision 4))
+    (style (thickness 0.2) (arrow_length 1.27) (text_position_mode 0) (extension_height 0.58642) (extension_offset 0.5) keep_text_aligned)
+  )
+  (dimension (type aligned) (layer "Dwgs.User") (tstamp 8642c7c3-93d6-43d6-8670-2e9e6ea652f6)
+    (pts (xy 111 184) (xy 294 184))
+    (height 14.5)
+    (gr_text "183.0000 mm" (at 202.5 197.35) (layer "Dwgs.User") (tstamp 8642c7c3-93d6-43d6-8670-2e9e6ea652f6)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (format (units 3) (units_format 1) (precision 4))
+    (style (thickness 0.15) (arrow_length 1.27) (text_position_mode 0) (extension_height 0.58642) (extension_offset 0.5) keep_text_aligned)
+  )
+  (dimension (type aligned) (layer "Dwgs.User") (tstamp 966d9e37-fb3c-4fe5-a7e7-a06b3460eb2a)
+    (pts (xy 111 131) (xy 111 184))
+    (height 12.3)
+    (gr_text "53.0000 mm" (at 97.55 157.5 90) (layer "Dwgs.User") (tstamp 966d9e37-fb3c-4fe5-a7e7-a06b3460eb2a)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (format (units 3) (units_format 1) (precision 4))
+    (style (thickness 0.15) (arrow_length 1.27) (text_position_mode 0) (extension_height 0.58642) (extension_offset 0.5) keep_text_aligned)
+  )
+  (dimension (type aligned) (layer "Dwgs.User") (tstamp aae8a1fa-fa15-4e94-b0cc-37ed56c89ee9)
+    (pts (xy 111 131) (xy 111 125))
+    (height -8.9)
+    (gr_text "6.0000 mm" (at 100.3 128 90) (layer "Dwgs.User") (tstamp aae8a1fa-fa15-4e94-b0cc-37ed56c89ee9)
       (effects (font (size 1.5 1.5) (thickness 0.3)))
     )
     (format (units 3) (units_format 1) (precision 4))
@@ -20544,7 +20571,6 @@
     (fill yes (thermal_gap 0.508) (thermal_bridge_width 0.508))
     (polygon
       (pts
-        (xy 289.5 137.2)
         (xy 289.5 137.2)
         (xy 289.5 188.5)
         (xy 245 188.5)
