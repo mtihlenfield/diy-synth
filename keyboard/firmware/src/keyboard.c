@@ -105,6 +105,11 @@ static inline void play_last_note(struct keyboard_state *state)
 
 void handle_keybed_event(uint8_t event_type, uint32_t key_id)
 {
+    if (KEY_NONE == key_id || KEY_MAX < key_id) {
+        printf("Invalid key_id: %d\n", key_id);
+        return;
+    }
+
     if (IO_KEY_PRESSED == event_type) {
         lkp_push_key(&g_state.key_press_stack, key_id);
 
