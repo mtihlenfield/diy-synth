@@ -4,6 +4,10 @@
 #define SER_CLK 1 // GPIO1 - PIN 2
 #define SER_DATA 0 // GPIO0 - PIN 1
 
+#define OCTAVE_DOWN_LED_PIN 15 // GPIO15 - PIN 20
+#define OCTAVE_MID_LED_PIN 14 // GPIO15 - PIN 19
+#define OCTAVE_UP_LED_PIN 13 // GPIO15 - PIN 17
+
 #define DAC_SPI_PORT spi1
 #define DAC_PIN_CS 9 // GP9
 #define DAC_PIN_SCK 10 // GP10

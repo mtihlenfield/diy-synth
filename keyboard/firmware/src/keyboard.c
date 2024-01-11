@@ -23,10 +23,17 @@ float cv_octave[12] = {
     0.9167, 1.000
 };
 
+#define NUM_OCTAVE_LEDS 3
+const uint8_t octave_led_pins[NUM_OCTAVE_LEDS] = {
+    OCTAVE_DOWN_LED_PIN, OCTAVE_MID_LED_PIN, OCTAVE_UP_LED_PIN
+};
+
 struct keyboard_state {
     struct lkp_stack key_press_stack;
-    int8_t octave_shift;
     struct mcp4921 dac;
+    int8_t top_octave_offset; // octave offset for middle c and above
+    int8_t bottom_octave_offset; // octave offset for keys below middle c
+    enum io_event func_key_state; // Whether or not the func key is being pressed
 } g_state;
 
 static int init_cv_dac(struct mcp4921 *dac)
@@ -61,32 +68,26 @@ static inline void set_gate(uint8_t gate_state)
 /*
  * Deterines what the CV value should be for the given key
  */
-static inline float key_to_cv(struct keyboard_state *state, enum key_id id)
+static float key_to_cv(struct keyboard_state *state, enum key_id id)
 {
     float key_octave = floor(id / 12);
     uint8_t note = (id % 12) - 1;
+    int8_t offset = 0;
 
-    return key_octave + state->octave_shift + cv_octave[note];
-}
-
-static inline void octave_shift(uint8_t direction)
-{
-    if (direction) {
-        if (g_state.octave_shift < OCTAVE_SHIFT_MAX) {
-            g_state.octave_shift++;
-        }
+    if (id >= KEY_MIDDLE_C) {
+        offset = g_state.top_octave_offset;
     } else {
-        if (g_state.octave_shift > OCTAVE_SHIFT_MIN) {
-            g_state.octave_shift--;
-        }
+        offset = g_state.bottom_octave_offset;
     }
+
+    return key_octave + offset + cv_octave[note];
 }
 
 /*
  * Set gate up and use the last key that is still pressed to
  * set the CV output.
  */
-static inline void play_last_note(struct keyboard_state *state)
+static void play_last_note(struct keyboard_state *state)
 {
     uint32_t current_note = lkp_get_last_key(&state->key_press_stack);
 
@@ -133,16 +134,68 @@ void handle_keybed_event(uint8_t event_type, uint32_t key_id)
     play_last_note(&g_state);
 }
 
+void update_leds(void)
+{
+    for (uint8_t i = 0; i < NUM_OCTAVE_LEDS; i++) {
+        gpio_put(octave_led_pins[i], 0);
+    }
+
+    gpio_put(octave_led_pins[g_state.top_octave_offset + 1], 1);
+
+    if (g_state.bottom_octave_offset == g_state.top_octave_offset) {
+        return;
+    }
+
+    gpio_put(octave_led_pins[g_state.bottom_octave_offset + 1], 1);
+}
+
+void handle_octave_change(uint32_t key_id)
+{
+    if (IO_KEY_PRESSED != g_state.func_key_state) {
+        if (KEY_OCTAVE_DOWN == key_id && g_state.bottom_octave_offset > OCTAVE_SHIFT_MIN) {
+            g_state.top_octave_offset -= 1;
+        } else if (KEY_OCTAVE_UP == key_id && g_state.top_octave_offset < OCTAVE_SHIFT_MAX) {
+            g_state.top_octave_offset += 1;
+        }
+
+        g_state.bottom_octave_offset = g_state.top_octave_offset;
+    } else {
+        if (KEY_OCTAVE_DOWN == key_id && g_state.bottom_octave_offset > OCTAVE_SHIFT_MIN) {
+            g_state.bottom_octave_offset -= 1;
+        } else if (KEY_OCTAVE_UP == key_id && g_state.bottom_octave_offset < g_state.top_octave_offset) {
+            // Not letting bottom offset go higher than the top offset
+            g_state.bottom_octave_offset += 1;
+        }
+    }
+
+    update_leds();
+}
+
 void handle_func_key_event(uint8_t event_type, uint32_t key_id)
 {
+    if (KEY_FUNC == key_id) {
+        g_state.func_key_state = event_type;
+        return;
+    }
+
     if (IO_KEY_RELEASED == event_type) {
         return;
     }
 
-    if (KEY_OCTAVE_UP == key_id) {
-        octave_shift(1);
-    } else if (KEY_OCTAVE_DOWN == key_id) {
-        octave_shift(0);
+    if (KEY_OCTAVE_UP == key_id || KEY_OCTAVE_DOWN == key_id) {
+        handle_octave_change(key_id);
+    }
+}
+
+void indicate_boot()
+{
+    for (uint8_t i = 0; i < 3; i++) {
+        for (uint8_t i = 0; i < NUM_OCTAVE_LEDS; i++) {
+            sleep_ms(50);
+            gpio_put(octave_led_pins[i], 1);
+            sleep_ms(50);
+            gpio_put(octave_led_pins[i], 0);
+        }
     }
 }
 
@@ -155,6 +208,11 @@ int main(void)
     gpio_init(PWR_LED_PIN);
     gpio_set_dir(PWR_LED_PIN, GPIO_OUT);
     gpio_put(PWR_LED_PIN, 1);
+
+    for (uint8_t i = 0; i < NUM_OCTAVE_LEDS; i++) {
+        gpio_init(octave_led_pins[i]);
+        gpio_set_dir(octave_led_pins[i], GPIO_OUT);
+    }
 
     gpio_init(GATE_OUT_PIN);
     gpio_set_dir(GATE_OUT_PIN, GPIO_OUT);
@@ -179,6 +237,10 @@ int main(void)
 
     multicore_launch_core1(io_main);
     mcp4921_set_output(&g_state.dac, 1.0 / CV_OPAMP_GAIN);
+
+    indicate_boot();
+
+    update_leds();
 
     while (1) {
         while (io_event_queue_ready()) {
