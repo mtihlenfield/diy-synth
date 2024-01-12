@@ -2,8 +2,9 @@
 set -euxo pipefail
 
 openocd \
-    -f interface/picoprobe.cfg \
+    -f interface/cmsis-dap.cfg \
     -f target/rp2040.cfg \
+    -s tcl \
     -c "program keyboard.elf verify reset exit"
 
 echo "Make sure to reset the pico!"

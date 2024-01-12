@@ -16,7 +16,10 @@
 #define OCTAVE_SHIFT_MAX 1
 #define OCTAVE_SHIFT_MIN -1
 
-// TODO middle C should be C4
+// Bumps the CV value up by 1 so that if we are in -O mode we don't have
+// negatve CV values
+#define DEFAULT_SHIFT 1
+
 float cv_octave[12] = {
     0.0833, 0.1667, 0.2550, 0.3333, 0.4167,
     0.5000, 0.5833, 0.6667, 0.7500, 0.8333,
@@ -80,7 +83,7 @@ static float key_to_cv(struct keyboard_state *state, enum key_id id)
         offset = g_state.bottom_octave_offset;
     }
 
-    return key_octave + offset + cv_octave[note];
+    return key_octave + offset + DEFAULT_SHIFT + cv_octave[note];
 }
 
 /*
