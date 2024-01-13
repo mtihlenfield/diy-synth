@@ -9,4 +9,5 @@
   (lib (name "Alpha_Pots")(type "KiCad")(uri "/home/strav/devel/diy-synth/eurorack-libs/Alpha_Pots.pretty")(options "")(descr ""))
   (lib (name "Wealth_Metal_Switches")(type "KiCad")(uri "/home/strav/devel/diy-synth/eurorack-libs/Wealth_Metal_Switches.pretty")(options "")(descr ""))
   (lib (name "Keyboard")(type "KiCad")(uri "/home/strav/devel/diy-synth/keyboard/hardware/libraries/KiCad-RP-Pico/RP-Pico Libraries/Keyboard.pretty")(options "")(descr ""))
+  (lib (name "lm1117")(type "KiCad")(uri "/home/strav/devel/diy-synth/eurorack-libs/lm1117.pretty")(options "")(descr ""))
 )
