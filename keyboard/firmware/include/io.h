@@ -35,6 +35,8 @@ enum key_id {
 
 #define MAX_KEYBED_KEY 49
 
+#define MIDI_KEY_OFFSET 35
+
 /*
  * Returns 1 if the provided key is a keybed key. Returns
  * 0 if the provided key is a function key

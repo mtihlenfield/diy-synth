@@ -14,6 +14,7 @@ add_executable(keyboard
   src/mcp4921.c
   src/io.c
   src/lkp_stack.c
+  src/usb_descriptors.c
   include/mcp4921.h
   include/io.h
   include/list.h
@@ -27,7 +28,9 @@ target_link_libraries(keyboard
 	pico_stdlib
 	pico_multicore
 	hardware_spi
-	hardware_adc)
+	hardware_adc
+        tinyusb_device
+        tinyusb_board)
 
 
 pico_add_extra_outputs(keyboard)

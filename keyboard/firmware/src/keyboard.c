@@ -2,6 +2,7 @@
 #include <stddef.h>
 #include <math.h>
 #include <string.h>
+#include "tusb.h"
 #include "pico/stdlib.h"
 #include "pico/multicore.h"
 #include "hardware/gpio.h"
@@ -15,6 +16,10 @@
 
 #define OCTAVE_SHIFT_MAX 1
 #define OCTAVE_SHIFT_MIN -1
+
+#define DEFAULT_MIDI_VELOCITY 127
+#define DEFAULT_MIDI_CHANNEL 0
+#define DEFAULT_MIDI_CABLE_NUM 0
 
 // Bumps the CV value up by 1 so that if we are in -O mode we don't have
 // negatve CV values
@@ -86,6 +91,19 @@ static float key_to_cv(struct keyboard_state *state, enum key_id id)
     return key_octave + offset + DEFAULT_SHIFT + cv_octave[note];
 }
 
+static uint8_t key_to_midi(struct keyboard_state *state, enum key_id id)
+{
+    int8_t offset = 0;
+
+    if (id >= KEY_MIDDLE_C) {
+        offset = g_state.top_octave_offset;
+    } else {
+        offset = g_state.bottom_octave_offset;
+    }
+
+    return id + MIDI_KEY_OFFSET + (offset * 12);
+}
+
 /*
  * Set gate up and use the last key that is still pressed to
  * set the CV output.
@@ -105,6 +123,29 @@ static void play_last_note(struct keyboard_state *state)
     printf("Setting CV to %fv\n", cv);
 
     mcp4921_set_output(&state->dac, cv / CV_OPAMP_GAIN);
+}
+
+void write_midi_event(uint8_t event_type, uint32_t key_id)
+{
+    uint8_t msg[3];
+
+    if (KEY_NONE == key_id || KEY_MAX < key_id) {
+        printf("Invalid key_id: %d\n", key_id);
+        return;
+    }
+
+    if (IO_KEY_PRESSED == event_type) {
+        msg[0] = 0x90;
+        msg[2] = DEFAULT_MIDI_VELOCITY;
+    } else {
+        msg[0] = 0x80;
+        msg[2] = 0;
+    }
+
+    msg[0] |= DEFAULT_MIDI_CHANNEL; // message type and channel
+    msg[1] = key_to_midi(&g_state, key_id); // note value
+    printf("midi note - state: 0x%x, note: %d\n", msg[0], msg[1]);
+    tud_midi_stream_write(DEFAULT_MIDI_CABLE_NUM, msg, sizeof(msg));
 }
 
 void handle_keybed_event(uint8_t event_type, uint32_t key_id)
@@ -202,9 +243,16 @@ void indicate_boot()
     }
 }
 
+void clear_midi_in()
+{
+  uint8_t packet[4];
+  while ( tud_midi_available() ) tud_midi_packet_read(packet);
+}
+
 int main(void)
 {
     stdio_init_all();
+    tusb_init();
 
     printf("Starting keyboard controller!\n");
 
@@ -239,6 +287,7 @@ int main(void)
     }
 
     multicore_launch_core1(io_main);
+
     mcp4921_set_output(&g_state.dac, 1.0 / CV_OPAMP_GAIN);
 
     indicate_boot();
@@ -246,6 +295,10 @@ int main(void)
     update_leds();
 
     while (1) {
+
+        tud_task(); // tinyusb device task
+        clear_midi_in();
+
         while (io_event_queue_ready()) {
             uint8_t event_type = 0;
             uint16_t event_val = 0;
@@ -258,6 +311,7 @@ int main(void)
                 case IO_KEY_PRESSED:
 	        case IO_KEY_RELEASED:
                     if (io_is_keybed_key(event_val)) {
+                        write_midi_event(event_type, event_val);
                         handle_keybed_event(event_type, event_val);
                     } else {
                         handle_func_key_event(event_type, event_val);
